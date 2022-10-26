@@ -1,0 +1,4 @@
+# Windows10KVM
+Intel GVT-g is a technology that provides mediated device passthrough for Intel GPUs (Broadwell and newer). It can be used to virtualize the GPU for multiple guest virtual machines, effectively providing near-native graphics performance in the virtual machine and still letting your host use the virtualized GPU normally. This is useful if you want accelerated graphics in Windows virtual machines running on ultrabooks without dedicated GPUs for full device passthrough. (Similar technologies exist for NVIDIA and AMD GPUs, but they are available only in the "professional" GPU lines like Quadro, Radeon Pro and so on.)
+
+There is also a variant of this technology called GVT-d - it is essentially Intel's name for full device passthrough with the vfio-pci driver. With GVT-d, the host cannot use the virtualized GPU.
